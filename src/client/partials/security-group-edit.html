@@ -70,34 +70,42 @@
 				</div>
 
 				<div class="row">
-					<div class="col-md-6 permissions">
-						<p>Pridelené práva</p>
-						<table border="1">
-							<tbody>
-								<tr ng-repeat="perm in group.permissions">
-									<td><a href="" ng-click="removePermission(perm)"><i class="glyphicon glyphicon-minus"></i></a>&nbsp;</td>
-									<td ng-click="removePermission(perm)">{{perm}}</td>
-								</tr>
-							</tbody>
-						</table>
+					<div class="col-md-6">
+						<h4>Pridelené práva</h4>
+						<div class="permissions">
+							<table border="1">
+								<tbody>
+									<tr ng-repeat="perm in group.permissions">
+										<td><a href="" ng-click="removePermission(perm)"><i class="glyphicon glyphicon-minus"></i></a>&nbsp;</td>
+										<td ng-click="removePermission(perm)">{{perm}}</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
 					</div>
 
-					<div class="col-md-6 permissions">
-						<p>Dostupné práva</p>
-						<table border="1">
-							<tbody>
-								<tr ng-repeat="perm in permissions">
-									<td><a href="" ng-click="addPermission(perm)"><i
-											class="glyphicon glyphicon-plus"></i></a>&nbsp;</td>
-									<td ng-click="addPermission(perm)">{{perm}}</td>
-								</tr>
-							</tbody>
-						</table>
+					<div class="col-md-6">
+						<h4>Dostupné práva</h4>
+						<div class="permissions">
+							<table border="1">
+								<tbody>
+									<tr ng-repeat="perm in permissions">
+										<td><a href="" ng-click="addPermission(perm)"><i
+												class="glyphicon glyphicon-plus"></i></a>&nbsp;</td>
+										<td ng-click="addPermission(perm)">{{perm}}</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
 					</div>
 				</div>
 
 				<div class="row">
-					<button ng-click="updateGroupPermissions()" class="btn btn-primary">Uložiť</button>
+					<div class="col-md-12">
+						<br>
+						<br>
+						<button ng-click="updateGroupPermissions()" class="btn btn-primary">Uložiť</button>
+					</div>
 				</div>
 			</div>
 		</div>

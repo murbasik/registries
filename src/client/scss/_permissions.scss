@@ -1,7 +1,11 @@
 div.permissions {
 	border: 1px solid #ddd;
+	background: #fafafa;
 	padding: 10px;
-	min-height: 200px;
+	height: 200px;
+	overflow: hidden;
+	overflow-y: auto;
+	position: relative;
 	a {
 		color: black;
 	}
